@@ -6,6 +6,7 @@
 # Open brackets must be closed in the correct order.
 # Every close bracket has a corresponding open bracket of the same type.
 
+
 class Solution(object):
     def isValid(self, s):
         """
@@ -20,7 +21,7 @@ class Solution(object):
             '}' : '{',
             ']' : '['
         }
-        
+
         for char in s:
             if char not in close_to_open:
                 stack.append(char)
