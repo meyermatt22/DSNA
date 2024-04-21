@@ -4,8 +4,6 @@
 
 # The solution set must not contain duplicate subsets. Return the solution in any order.
 
-
-
 # Example 1:
 
 # Input: nums = [1,2,3]
@@ -26,7 +24,7 @@ class Solution:
             subset.append(nums[i])
             _backtrack(i+1)
             subset.pop()
-            
+
 
             # decision to not include nums[i]
             _backtrack(i+1)
