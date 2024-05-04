@@ -19,4 +19,17 @@ class Solution:
                 else:
                     return False
 
+              
+        for i in range(0, 9, 3):
+            for j in range(0, 9, 3):
+                seen = set()
+                for x in range(3):
+                    for y in range(3):
+                        num = board[i + x][j + y]
+                        if num != ".":
+                            if num in seen:
+                                return False
+                            seen.add(num)
+
+
         return True
