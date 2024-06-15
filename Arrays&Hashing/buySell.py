@@ -17,6 +17,7 @@
 # Input: prices = [1]
 # Output: 0
 
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         if not prices:
