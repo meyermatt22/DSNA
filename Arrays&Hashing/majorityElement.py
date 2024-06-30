@@ -13,6 +13,7 @@
 # Input: nums = [2,2,1,1,1,2,2]
 # Output: 2
 
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         n = len(nums)
@@ -30,4 +31,4 @@ class Solution:
         if max_value > n / 2:
             return max_key
 
-        return False 
+        return False
