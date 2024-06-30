@@ -1,3 +1,5 @@
+
+
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         def backtrack(s='', left=0, right=0):
